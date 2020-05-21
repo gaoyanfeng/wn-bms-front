@@ -1,0 +1,11 @@
+/*通用样式*/
+/*路由路径*/
+.crumbs {
+  margin: 0 0 10px 0;
+}
+.area-common-style{
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border-radius: 9px;
+}

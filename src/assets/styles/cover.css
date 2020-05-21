@@ -1,0 +1,122 @@
+/*覆盖样式*/
+/* ####################按钮覆盖样式#################### */
+.el-button[name='orange'] {
+  background:#F27042;
+  border-color:#F27042;
+}
+.el-button[name='orange']:hover {
+  background:#FF8E55;
+}
+.el-button[name='blue'] {
+  background:#13279F;
+  border-color:#13279F;
+}
+.el-button[name='blue']:hover {
+  background:#3747A0;
+}
+.el-button[name='orange-plain'] {
+  border: 1px solid #F27042;
+  background: #fff;
+  color: #F27042;
+}
+.el-button[name='orange-plain']:hover {
+  border: 1px solid #FF8E55;
+  color: #F27042;
+  background: rgba(242,112,66,0.10);
+}
+.el-button[name='operate'] {
+  border: 1px solid #F27042;
+  color:#F27042;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 0 8px;
+  height: 22px;
+  line-height: 18px;
+  box-sizing: border-box;
+}
+.el-button[name='operate']:hover {
+  background-color: rgba(242,112,66,0.10);
+  border: 1px solid #FF8E55;
+}
+/* ####################table覆盖样式#################### */
+.el-table th>.cell{
+  font-size: 16px !important;
+  color: #6C757E !important;
+}
+.el-table td>.cell{
+  font-size: 14px !important;
+  color: #6C757E !important;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+/* ####################input覆盖样式#################### */
+.el-input__inner:focus, .el-select .el-input.is-focus .el-input__inner, .el-textarea__inner:focus {
+  border: 1px solid #13279f;
+}
+/* ####################select覆盖样式#################### */
+.el-select .el-input__inner:focus {
+  border: 1px solid #13279f;
+}
+.el-select__caret,.el-icon-arrow-down:before {
+  color: #4360AE !important;
+}
+.el-icon-arrow-up:before {
+  content: "\25B2";
+  font-size: 12px;
+}
+.el-icon-arrow-down:before {
+  content: "\25BC";
+  font-size: 12px;
+}
+.el-select-dropdown__item.selected {
+  color: #F27042
+}
+/* ####################checkbox覆盖样式#################### */
+.is-checked .el-checkbox__inner, .is-indeterminate .el-checkbox__inner {
+  border-color: #f27042 !important;
+  background-color: #f27042 !important;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: #f27042;
+}
+.el-checkbox__inner:hover {
+  border-color: #f27042;
+}
+.el-checkbox__input.is-focus .el-checkbox__inner,
+.el-checkbox__inner:hover{
+  border-color: #f27042;
+}
+/* ####################radio覆盖样式#################### */
+.el-radio__input.is-checked .el-radio__inner {
+  background-color: #F27042;
+  border-color: #F27042;
+}
+.el-radio__input.is-checked+.el-radio__label {
+  color: #F27042;
+}
+.el-radio__inner:hover{
+  border-color: #868080;
+}
+.el-radio__inner::after{
+  width: 6px;
+  height: 6px;
+}
+/* ####################switch覆盖样式#################### */
+.el-switch.is-checked .el-switch__core{
+  background-color: #F27042;
+  border-color: #F27042;
+}
+/* ####################pagination覆盖样式#################### */
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background-color: #13279F;
+}
+/* ####################dropdown覆盖样式#################### */
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+  background-color: #dee5ef;
+}
+.el-dropdown .el-select__caret, .el-dropdown .el-icon-arrow-down:before {
+  color: #ffffff !important;
+}
+
