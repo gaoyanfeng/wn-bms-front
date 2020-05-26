@@ -8,6 +8,7 @@ import './assets/styles/reset.css'
 import './assets/styles/cover.css'
 import './assets/styles/common.css'
 import './assets/icons/iconfont.css'
+import './libs/btnPermissions.js'
 
 Vue.config.productionTip = false
 
