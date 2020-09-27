@@ -39,12 +39,12 @@ export default {
     }
   },
   computed: {
-    showTags() {
+    showTags () {
       return this.tagsList.length > 0
     }
   },
   methods: {
-    isActive(path) {
+    isActive (path) {
       return path === this.$route.fullPath
     },
     /**
@@ -55,7 +55,7 @@ export default {
       const item = this.tagsList[index] ? this.tagsList[index] : this.tagsList[index - 1]
       if (item) {
         delItem.path === this.$route.fullPath && this.$router.push(item.path)
-      }else{
+      } else {
         this.$router.push('/home')
       }
     },
@@ -68,7 +68,7 @@ export default {
     /**
      * @desc 关闭其他标签
      */
-    closeOther(){
+    closeOther () {
       const curItem = this.tagsList.filter(item => {
         return item.path === this.$route.fullPath
       })
@@ -77,19 +77,19 @@ export default {
     /**
      * @desc 关闭全部标签
      */
-    closeAll(){
+    closeAll () {
       this.tagsList = []
       this.$router.push('/home')
     },
     /**
      * @desc 设置标签
      */
-    setTags(route){
+    setTags (route) {
       const isExist = this.tagsList.some(item => {
         return item.path === route.fullPath
       })
-      if(!isExist){
-        if(this.tagsList.length >= 10){
+      if (!isExist) {
+        if (this.tagsList.length >= 10) {
           this.tagsList.shift()
         }
         this.tagsList.push({
@@ -130,10 +130,10 @@ export default {
         }
       }
       this.isFullscreen = !this.isFullscreen
-    },
+    }
   },
-  watch:{
-    $route(newValue, oldValue){
+  watch: {
+    $route (newValue, oldValue) {
       this.setTags(newValue)
       console.log(newValue)
     }

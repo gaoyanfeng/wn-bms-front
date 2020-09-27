@@ -62,7 +62,7 @@ export default {
       default: function () {}
     }
   },
-  data() {
+  data () {
     return {
       ruleForm: {
         name: '',
@@ -98,18 +98,18 @@ export default {
           { required: true, message: '请填写活动形式', trigger: 'blur' }
         ]
       }
-    };
+    }
   },
   methods: {
-    saveBtnHandle(formName) {
+    saveBtnHandle (formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          alert('submit!');
+          alert('submit!')
         } else {
-          console.log('error submit!!');
-          return false;
+          console.log('error submit!!')
+          return false
         }
-      });
+      })
     },
     cancelBtnHandle (formName) {
       this.$emit('closeDialog', 'cancelDialog')

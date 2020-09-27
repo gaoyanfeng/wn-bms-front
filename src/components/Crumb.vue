@@ -2,8 +2,8 @@
   <div class="crumbs">
     <el-breadcrumb separator="/">
       <template v-for="(item, index) in pathList">
-        <el-breadcrumb-item v-if="index < pathList.length - 1" :to="{ path: item.path }"><i :class="item.icon"></i>{{item.name}}</el-breadcrumb-item>
-        <el-breadcrumb-item v-else>{{item.name}}</el-breadcrumb-item>
+        <el-breadcrumb-item :key="index" v-if="index < pathList.length - 1" :to="{ path: item.path }"><i :class="item.icon"></i>{{item.name}}</el-breadcrumb-item>
+        <el-breadcrumb-item :key="index" v-else>{{item.name}}</el-breadcrumb-item>
       </template>
     </el-breadcrumb>
   </div>

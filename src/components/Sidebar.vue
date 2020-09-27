@@ -43,8 +43,7 @@ export default {
   name: 'Sidebar',
   data () {
     return {
-      collapse: false,
-
+      collapse: false
     }
   },
   computed: {
